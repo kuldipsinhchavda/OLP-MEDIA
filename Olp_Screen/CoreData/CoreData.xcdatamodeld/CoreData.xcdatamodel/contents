@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserData" representedClassName="UserData" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="full_Name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="user_Name" optional="YES" attributeType="String"/>
+        <relationship name="dataToPhoto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserPhoto" inverseName="photoToData" inverseEntity="UserPhoto"/>
+    </entity>
+    <entity name="UserPhoto" representedClassName="UserPhoto" syncable="YES">
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <relationship name="photoToData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="dataToPhoto" inverseEntity="UserData"/>
+    </entity>
+    <elements>
+        <element name="UserData" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="UserPhoto" positionX="-54" positionY="-9" width="128" height="88"/>
+    </elements>
+</model>

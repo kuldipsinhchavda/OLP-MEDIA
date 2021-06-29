@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WatchMoreCollectionViewCell" id="gTV-IL-0wX" customClass="WatchMoreCollectionViewCell" customModule="Olp_Screen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kzw-QY-McS">
+                        <rect key="frame" x="5" y="5" width="178" height="149"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="178" id="F0E-Mw-xyX"/>
+                            <constraint firstAttribute="height" constant="149" id="Xxt-1R-BRD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-k0-mli">
+                        <rect key="frame" x="10" y="164" width="168" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTU-Wn-an3">
+                        <rect key="frame" x="10" y="194.5" width="168" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.56405179790000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="kzw-QY-McS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="1zm-y8-RdU"/>
+                <constraint firstItem="VTU-Wn-an3" firstAttribute="top" secondItem="cgg-k0-mli" secondAttribute="bottom" constant="10" id="5ZP-jb-hGz"/>
+                <constraint firstItem="kzw-QY-McS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="72L-99-QLy"/>
+                <constraint firstItem="cgg-k0-mli" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="EyW-Fm-mRX"/>
+                <constraint firstItem="kzw-QY-McS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="K0Z-eV-6r8"/>
+                <constraint firstItem="VTU-Wn-an3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="P5F-uQ-QRE"/>
+                <constraint firstAttribute="trailing" secondItem="kzw-QY-McS" secondAttribute="trailing" constant="5" id="PLu-JI-4Iy"/>
+                <constraint firstItem="VTU-Wn-an3" firstAttribute="top" secondItem="cgg-k0-mli" secondAttribute="bottom" constant="10" id="QPO-64-Jl1"/>
+                <constraint firstAttribute="trailing" secondItem="cgg-k0-mli" secondAttribute="trailing" constant="10" id="jNi-Ox-Och"/>
+                <constraint firstItem="cgg-k0-mli" firstAttribute="top" secondItem="kzw-QY-McS" secondAttribute="bottom" constant="10" id="kS1-mX-vlE"/>
+                <constraint firstAttribute="bottom" secondItem="VTU-Wn-an3" secondAttribute="bottom" priority="996" constant="10" id="kmN-av-xcz"/>
+                <constraint firstAttribute="trailing" secondItem="VTU-Wn-an3" secondAttribute="trailing" constant="10" id="wls-R4-aKK"/>
+            </constraints>
+            <size key="customSize" width="188" height="225"/>
+            <connections>
+                <outlet property="descLbl" destination="VTU-Wn-an3" id="TMl-DH-Jpc"/>
+                <outlet property="pImage" destination="kzw-QY-McS" id="MNJ-kF-7yI"/>
+                <outlet property="titleLbl" destination="cgg-k0-mli" id="Lml-eY-dpS"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="87.388392857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>
